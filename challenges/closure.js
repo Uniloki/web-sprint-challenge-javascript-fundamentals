@@ -17,8 +17,17 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+//The nested function is within the scope of internal, Beacause it is still within the parent function 'my function' there is no issue fetching the variabale.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(number){
+  let sum = 0;
+  for(let i = 1; i < number; i++){
+    sum += i;
+  }
+  sum += number;
+  console.log (sum);
+}
+summation(10);
